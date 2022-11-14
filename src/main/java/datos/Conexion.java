@@ -17,6 +17,7 @@ import org.apache.commons.dbcp2.BasicDataSource;
 public class Conexion {
     
     //Conexion de esau
+    //Cambio Garay
     
    // private static final String JDBC_URL="jdbc:mysql://localhost:3306/bd_tecnologica?useSSL=false&useTimezone=true&serverTimezone=UTC&allowPublickeyRetrieval=true";
    // private static final String JDBC_USER="root";
