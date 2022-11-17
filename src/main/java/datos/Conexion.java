@@ -1,60 +1,68 @@
 
 package datos;
 
-import java.sql.*;
+import java.sql.*; 
 import java.sql.SQLException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-//import java.util.logging.Level;
-//import java.util.logging.Logger;
 import javax.sql.DataSource;
 import org.apache.commons.dbcp2.BasicDataSource;
 
 /**
  *
- * @author rafag
+ * @author MilaCor
  */
 public class Conexion {
     
-    //Conexion de esau
-    //Cambio Garay
+    //esta url se trae del wizard
+    private static final String JDBC_URL="jdbc:mysql://localhost:3307/bd_tecnologica?useSSL=false&useTimezone=true&serverTimezone=UTC&allowPublickeyRetrieval=true";
     
-   // private static final String JDBC_URL="jdbc:mysql://localhost:3306/bd_tecnologica?useSSL=false&useTimezone=true&serverTimezone=UTC&allowPublickeyRetrieval=true";
-   // private static final String JDBC_USER="root";
-   // private static final String JDBC_PASSWORD="password2025*";
+    private static final String JDBC_USER = "root";
+    private static final String JDBC_PASSWORD = "";
     
-    private static final String JDBC_URL="jdbc:mysql://localhost:3306/bd_tecnologica?useSSL=false&useTimezone=true&serverTimezone=UTC&allowPublickeyRetrieval=true";
+    //se crea automaticamente la libreria de org.apache
+    private static BasicDataSource dataSource;
     
-    private static final String JDBC_USER="root";
-    private static final String JDBC_PASSWORD="Ragm_1976";
-    
-    private static BasicDataSource datasource;
-    
-    public static DataSource getDataSource()throws SQLException{
-        if (datasource== null){
-            datasource = new BasicDataSource();
-            datasource.setUrl(JDBC_URL);
-            datasource.setUsername(JDBC_USER);
-            datasource.setPassword(JDBC_PASSWORD);
-            //No de conexiones
-            datasource.setInitialSize(10);
+    //se crea la libreria javax.sql.DataSource automaticamente
+    public static DataSource getDataSource() throws SQLException{ //importamos el sqlException
+        
+        //
+        if(dataSource == null){
+            dataSource = new BasicDataSource(); //instancia de BasicDataSource
             
+            dataSource.setUrl(JDBC_URL);
+            dataSource.setUsername(JDBC_USER);
+            dataSource.setPassword(JDBC_PASSWORD);
+            //Num. de conexiones, diciendo que se conectaran 20 usuarios, no necesariamente simultaneas.
+            dataSource.setInitialSize(10);
             
+            /*ADICIONALES... configuracion de Pool de Direcciones.
+            //Minimo de conexiones que se pueden admitir
+            dataSource.setMinIdle(3);
+            
+            //Maximo de conexiones que se pueden admitir
+            dataSource.setMaxIdle(40);
+            
+            //Total de conexiones que se conectarán
+            dataSource.setMaxTotal(43);*/
         }
-        System.out.println("datasource = " + datasource);
-        return datasource;
+        System.out.println("dataSource = " + dataSource);
+        return dataSource;
     }
     
+    //Con esto, obtenemos una conexion a la base de datos a partir del Pool de direcciones
     public static Connection getConnection() throws SQLException{
-        
+
+        //Llamar el conector que estamos trabajando, traido desde el wizard de la bd => ´Driver class´
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
         } catch (ClassNotFoundException ex) {
             ex.printStackTrace(System.out);
         }
-        return getDataSource().getConnection();
+
+        return getDataSource().getConnection();   
     }
     
+    //Metodos para...
+    //Cerrar el Resulset
     public static void close(ResultSet rs){
         try {
             rs.close();
@@ -63,20 +71,23 @@ public class Conexion {
         }
     }
     
-    public static void close(PreparedStatement stmt){
+    //Cerrar el PreparedStatement
+    public static void Close(PreparedStatement stmt){
         try {
             stmt.close();
         } catch (SQLException ex) {
-           ex.printStackTrace(System.out);
+            ex.printStackTrace(System.out);
         }
     }
     
-    public static void close(Connection conn){
+    //Cerrar la conexion
+    public static void closer(Connection conn){
         try {
             conn.close();
         } catch (SQLException ex) {
             ex.printStackTrace(System.out);
         }
     }
+    
     
 }

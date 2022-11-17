@@ -1,11 +1,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>rgm.com.sv</groupId>
-    <artifactId>ControlClientes</artifactId>
+    <groupId>conexion_a_bd.com.sv</groupId>
+    <artifactId>conexionbd</artifactId>
     <version>1.0</version>
     <packaging>war</packaging>
-    <name>ControlClientes</name>
+    <name>conexionbd</name>
     
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
@@ -23,7 +23,7 @@
             <version>${jakartaee}</version>
             <scope>provided</scope>
         </dependency>
-        <dependency>
+         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
             <version>8.0.30</version>
@@ -52,7 +52,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
-                <version>2.3</version>
+                <version>3.2.1</version>
                 <configuration>
                     <failOnMissingWebXml>false</failOnMissingWebXml>
                 </configuration>
