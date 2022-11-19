@@ -72,9 +72,9 @@ public class ClienteDaoJDBC {
             ex.printStackTrace(System.out);
         }finally{
             //Cerrando el resulset, el prepareStatement y la conexion
-            Conexion.close(rs);
+           /* Conexion.close(rs);
             Conexion.Close(stmt);
-            Conexion.closer(conn);
+            Conexion.closer(conn);*/
         }
         return clientes;
     }
@@ -109,9 +109,9 @@ public class ClienteDaoJDBC {
         } catch (SQLException ex) {
             ex.printStackTrace(System.out);
         } finally {
-            Conexion.close(rs);
+            /*Conexion.close(rs);
             Conexion.Close(stmt);
-            Conexion.closer(conn);
+            Conexion.closer(conn);*/
         }
         return cliente;
     }
@@ -136,8 +136,8 @@ public class ClienteDaoJDBC {
         } catch (SQLException ex) {
             ex.printStackTrace(System.out);
         } finally {
-            Conexion.Close(stmt);
-            Conexion.closer(conn);
+            /*Conexion.Close(stmt);
+            Conexion.closer(conn);*/
         }
         return rows;
     }
@@ -163,8 +163,8 @@ public class ClienteDaoJDBC {
         } catch (SQLException ex) {
             ex.printStackTrace(System.out);
         } finally {
-            Conexion.Close(stmt);
-            Conexion.closer(conn);
+            /*Conexion.Close(stmt);
+            Conexion.closer(conn);*/
         }
         return rows;
     } 
@@ -183,8 +183,8 @@ public class ClienteDaoJDBC {
         }catch (SQLException ex) {
             ex.printStackTrace(System.out);
         } finally {
-            Conexion.Close(stmt);
-            Conexion.closer(conn);
+            /*Conexion.Close(stmt);
+            Conexion.closer(conn);*/
         }
         return rows;
     }
