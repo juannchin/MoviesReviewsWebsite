@@ -1,45 +1,52 @@
 
 package dominio;
 
-
+/**
+ *
+ * @author MilaCor
+ */
 public class Cliente {
-    private int idCliente;
-    private String nombre;
-    private String apellido;
-    private String email;
-    private String telefono;
+    //variables iguales a las de la base de datos
+    private int id_cliente;
+    private String nombre, apellido, email, telefono;
     private double saldo;
-
-    public Cliente() {
+    private int edad;
+    
+    //Constructores
+    public Cliente(){
+    
     }
 
-    public Cliente(int idCliente) {
-        this.idCliente = idCliente;
+    public Cliente(int id_cliente) {
+        this.id_cliente = id_cliente;
     }
 
-    public Cliente(String nombre, String apellido, String email, String telefono, double saldo) {
+    public Cliente(String nombre, String apellido, String email, String telefono, double saldo, int edad) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.email = email;
         this.telefono = telefono;
         this.saldo = saldo;
+        this.edad = edad;
     }
 
-    public Cliente(int idCliente, String nombre, String apellido, String email, String telefono, double saldo) {
-        this.idCliente = idCliente;
+    public Cliente(int id_cliente, String nombre, String apellido, String email, String telefono, double saldo, int edad) {
+        this.id_cliente = id_cliente;
         this.nombre = nombre;
         this.apellido = apellido;
         this.email = email;
         this.telefono = telefono;
         this.saldo = saldo;
+        this.edad = edad;
+    }
+    
+    //Metodos accesores
+    public int getId_cliente() {
+        return id_cliente;
     }
 
-    public int getIdCliente() {
-        return idCliente;
-    }
-
-    public void setIdCliente(int idCliente) {
-        this.idCliente = idCliente;
+    public void setId_cliente(int id_cliente) {
+        this.id_cliente = id_cliente;
     }
 
     public String getNombre() {
@@ -82,14 +89,21 @@ public class Cliente {
         this.saldo = saldo;
     }
 
-    @Override
-    public String toString() {
-        return "Cliente{" + "idCliente=" + idCliente + ", nombre=" + nombre + ", apellido=" + apellido + ", email=" + email + ", telefono=" + telefono + ", saldo=" + saldo + '}';
+    public int getEdad() {
+        return edad;
+    }
+
+    public void setEdad(int edad) {
+        this.edad = edad;
     }
     
-       
-    
-    
-    
-    
+    //Metodo ToString()
+
+    @Override
+    public String toString() {
+        return "Cliente{" + "id_cliente=" + id_cliente + ", nombre=" + nombre + 
+                ", apellido=" + apellido + ", email=" + email + ", telefono=" + 
+                telefono + ", saldo=" + saldo + ", edad=" + edad +'}';
+    }
+
 }

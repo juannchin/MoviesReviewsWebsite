@@ -29,6 +29,10 @@
                         <label for "saldo">Saldo</label>
                         <input type="text" class="form-control" name="saldo"required>
                     </div>
+                    <div class="form-group">
+                        <label for "saldo">Edad</label>
+                        <input type="number" class="form-control" name="edad"required>
+                    </div>
 
                 </div>
                 <div class="modal-footer">
