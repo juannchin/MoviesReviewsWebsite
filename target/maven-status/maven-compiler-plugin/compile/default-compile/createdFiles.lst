@@ -1,7 +1,10 @@
 web\ServletControlador.class
+dominio\Login.class
 dominio\Cliente.class
 datos\ClienteDaoJDBC.class
 datos\Conexion.class
+web\ServletLogin.class
+datos\LoginDao.class
 web\ServletTipoUsuario.class
 dominio\TipoUsuario.class
 datos\TipoUsuarioDaoJDBC.class
