@@ -3,30 +3,15 @@ package datos;
 
 import java.sql.*;
 import java.sql.SQLException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-//import java.util.logging.Level;
-//import java.util.logging.Logger;
 import javax.sql.DataSource;
 import org.apache.commons.dbcp2.BasicDataSource;
 
-/**
- *
- * @author rafag
- */
 public class Conexion {
     
-    //Conexion de esau
-    //Cambio Garay
-    
-   // private static final String JDBC_URL="jdbc:mysql://localhost:3306/bd_tecnologica?useSSL=false&useTimezone=true&serverTimezone=UTC&allowPublickeyRetrieval=true";
-   // private static final String JDBC_USER="root";
-   // private static final String JDBC_PASSWORD="password2025*";
-    
-    private static final String JDBC_URL="jdbc:mysql://localhost:3306/bd_tecnologica?useSSL=false&useTimezone=true&serverTimezone=UTC&allowPublickeyRetrieval=true";
-    
-    private static final String JDBC_USER="root";
-    private static final String JDBC_PASSWORD="Ragm_1976";
+   private static final String JDBC_URL="jdbc:mysql://localhost:3307/bd_control_de_peliculas?useSSL=false&useTimezone=true&serverTimezone=UTC&allowPublickeyRetrieval=true";
+  
+   private static final String JDBC_USER="root";
+    private static final String JDBC_PASSWORD="12345";
     
     private static BasicDataSource datasource;
     

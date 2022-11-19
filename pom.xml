@@ -1,11 +1,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>rgm.com.sv</groupId>
-    <artifactId>ControlClientes</artifactId>
+    <groupId>com.mycompany</groupId>
+    <artifactId>progra4_mantos_main</artifactId>
     <version>1.0</version>
     <packaging>war</packaging>
-    <name>ControlClientes</name>
+    <name>progra4_mantos_main</name>
     
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
