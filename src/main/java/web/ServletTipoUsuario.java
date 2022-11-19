@@ -1,6 +1,5 @@
 package web;
 
-
 import datos.TipoUsuarioDaoJDBC;
 import dominio.TipoUsuario;
 import java.io.IOException;
