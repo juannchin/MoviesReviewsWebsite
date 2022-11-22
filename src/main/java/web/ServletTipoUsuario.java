@@ -42,7 +42,7 @@ public class ServletTipoUsuario extends HttpServlet{
         System.out.println("TipoUsuarios="+  tipousuarios);
          HttpSession sesion = request.getSession();
         sesion.setAttribute("tipousuarios",  tipousuarios);
-        response.sendRedirect("tipousuarios.jsp");
+        response.sendRedirect("admin/tipousuarios.jsp");
     }
    
       protected void editarTipoUsuario(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
