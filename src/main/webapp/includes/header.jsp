@@ -49,6 +49,7 @@
 									</li>
 									<li><a href="no-sidebar.html">Contactanos</a> | </li>
 									<li><a href="login.jsp">Login</a></li>
+                                                                        <li><a href="registro.jsp">Registrate</a></li>
 								</ul>
 							</nav>
 

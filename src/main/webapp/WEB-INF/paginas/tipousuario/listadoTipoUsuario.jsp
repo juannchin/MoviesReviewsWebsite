@@ -28,10 +28,10 @@
                                             <i class="fas fa-angle-double-right"></i>Editar
                                         </a>
                                        
-                <a href="${pageContext.request.contextPath}/ServletTipoUsuario?accion=eliminar&idTipoUsuario=${tipousuario.idTipoUsuario}" 
-                    class="btn btn-danger btn-block">
-                   <i class="fas fa-trash"></i> Eliminar
-                </a>
+                                    <a href="${pageContext.request.contextPath}/ServletTipoUsuario?accion=eliminar&idTipoUsuario=${tipousuario.idTipoUsuario}" 
+                                        class="btn btn-danger btn-block">
+                                       <i class="fas fa-trash"></i> Eliminar
+                                    </a>
           
                                     </td>
                                 </tr>
