@@ -1,4 +1,5 @@
 web\ServletClasificacion.class
+dominio\NombrePeliculas.class
 datos\UsuariosDao.class
 dominio\Clasificacion.class
 datos\LoginDao.class
@@ -6,6 +7,7 @@ web\UsuariosServlet.class
 dominio\Login.class
 web\ServletUsuariosTipoUsua.class
 datos\UsuarioTipoUsuarioDaoJDBC.class
+web\ServletPeliculas.class
 datos\ClienteDaoJDBC.class
 datos\TipoCategoriaDaoJDBC.class
 datos\Conexion.class
@@ -15,10 +17,12 @@ web\ServletCategorias.class
 web\ServletTipoUsuario.class
 web\UserLogoutServlet.class
 dominio\Usuario.class
+datos\CategoriasDao.class
 dominio\TipoUsuario.class
 datos\ClasificacionDao.class
 datos\TipoUsuarioDaoJDBC.class
 dominio\TipoCategoria.class
 web\ServletControlador.class
 dominio\Cliente.class
+datos\PeliculasDao.class
 datos\LoginBean.class
