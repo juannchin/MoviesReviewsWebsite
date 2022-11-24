@@ -59,7 +59,7 @@
                                                                                         %>
 										</ul>
 									</li>
-									<li><a href="no-sidebar.html">Contactanos</a> | </li>
+									<li><a href="contacto.jsp">Contactanos</a> | </li>
                                                                         
                                                                         <%
                                                                             String uid = (String)session.getAttribute("User");
