@@ -8,6 +8,7 @@
 <%@page language="java" import="java.util.*" %>
 <%@page language="java" import="java.sql.*" %>
 <%@page language="java" import="datos.Conexion" %>
+<%@page session="true" %>
 <!DOCTYPE HTML>
 <html>
 	<head>
@@ -18,11 +19,10 @@
 	</head>
 	<body class="is-preload homepage">
              <%
-                ArrayList list = new ArrayList();
-                ArrayList sublist = new ArrayList();
                 try {
                     Connection conn = null; 
                     conn = Conexion.getConnection();
+                    String id = request.getParameter("id");
             %>
 		<div id="page-wrapper">
 
@@ -51,16 +51,32 @@
                                                                                     %>
 											<li><a href="ServletPeliculasPorCategoria?categoria=<%= rs1.getString("id")%>"> <%= rs1.getString("nombre")%></a></li>
                                                                                         <%
-                                                                                            } } catch (Exception e1) {
+                                                                                            }
+                                                                                                Conexion.close(conn);
+
+                                                                                                } catch (Exception e1) {
                                                                                             }
                                                                                         %>
 										</ul>
 									</li>
 									<li><a href="no-sidebar.html">Contactanos</a> | </li>
+                                                                        
+                                                                        <%
+                                                                            String uid = (String)session.getAttribute("User");
+                                                                            if (uid == null)
+                                                                            {
+                                                                            %>
 									<li><a href="login.jsp">Login</a></li>
                                                                         <li><a href="registro.jsp">Registrate</a></li>
+                                                                        <%	
+                                                                            }
+                                                                            else
+                                                                            { %>
+                                                                            <li><b>Bienvenido:</b> <%= uid %></li>
+                                                                             <li><a href="logout.jsp">Cerrar Sesión</a></li>
+                                                                            <%      }
+                                                                                    %>
 								</ul>
 							</nav>
-
 					</header>
 				</div>

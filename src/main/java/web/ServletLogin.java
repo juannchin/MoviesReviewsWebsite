@@ -58,7 +58,7 @@ public void doPost(HttpServletRequest request, HttpServletResponse response)
         {
  
             HttpSession session = request.getSession();
-            session.setAttribute("User", true);
+            session.setAttribute("User", n);
             request.setAttribute("userName", n);
  
             request.getRequestDispatcher("/index.jsp").forward(request, response);

@@ -2,11 +2,13 @@
 
 
 <jsp:include page="/includes/header.jsp" />
+<%@page session="true" %>
 <!-- Banner -->
 <div id="banner-wrapper">
     <div id="banner" class="box container">
         <h2>Bienvenidos.</h2>
-        <p>Este es un espacio para comentar y calificar sobre nuestras peliculas favoritas!</p>
+        <p>Este es un espacio para comentar y calificar sobre nuestras peliculas favoritas!
+        </p>
     </div>
 </div>
 
@@ -21,12 +23,13 @@
             <c:forEach var="peliculas" items="${listapeliculas}" varStatus="status">
                 <div class="col-4 col-12-medium">	
                     <section class="box feature">
-                        <a href="#" class="image featured"><img src="${peliculas.thumbnail}" height="100%" width="80%"></a>
+                        <a href="pelicula.jsp?id=${peliculas.idPelicula}" class="image featured"><img src="${peliculas.thumbnail}" height="100%" width="80%"></a>
 
                         <div class="inner">
                             <header>
                                 <h2> ${peliculas.nombrePelicula}</h2>
                                 <p>Puntaje: ${peliculas.calificacion} de 10</p>
+                                
                             </header>
 
                             ${peliculas.descripcion} <br>
