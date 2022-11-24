@@ -4,6 +4,7 @@ datos\UsuariosDao.class
 dominio\Clasificacion.class
 datos\LoginDao.class
 web\UsuariosServlet.class
+web\ServletPeliculasPorCategoria.class
 dominio\Login.class
 web\ServletUsuariosTipoUsua.class
 datos\UsuarioTipoUsuarioDaoJDBC.class
@@ -16,8 +17,8 @@ web\ServletLogin.class
 web\ServletCategorias.class
 web\ServletTipoUsuario.class
 web\UserLogoutServlet.class
+datos\CategoriaPeliculaDao.class
 dominio\Usuario.class
-datos\CategoriasDao.class
 dominio\TipoUsuario.class
 datos\ClasificacionDao.class
 datos\TipoUsuarioDaoJDBC.class

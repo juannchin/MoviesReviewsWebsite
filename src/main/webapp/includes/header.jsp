@@ -5,6 +5,9 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page language="java" import="java.util.*" %>
+<%@page language="java" import="java.sql.*" %>
+<%@page language="java" import="datos.Conexion" %>
 <!DOCTYPE HTML>
 <html>
 	<head>
@@ -14,6 +17,13 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
 	<body class="is-preload homepage">
+             <%
+                ArrayList list = new ArrayList();
+                ArrayList sublist = new ArrayList();
+                try {
+                    Connection conn = null; 
+                    conn = Conexion.getConnection();
+            %>
 		<div id="page-wrapper">
 
 			<!-- Header -->
@@ -32,19 +42,18 @@
 									<li>
 										<a href="#">Categorias</a>
 										<ul>
-											<li><a href="#">Accion</a></li>
-											<li><a href="#">Comedias</a></li>
-											<!-- <li>
-												<a href="#">Phasellus consequat</a>
-												<ul>
-													<li><a href="#">Lorem ipsum dolor</a></li>
-													<li><a href="#">Phasellus consequat</a></li>
-													<li><a href="#">Magna phasellus</a></li>
-													<li><a href="#">Etiam dolore nisl</a></li>
-												</ul>
-											</li> -->
-											<li><a href="#">Animacion</a></li>
-											<li><a href="#">Terror</a></li>
+                                                                                    <%
+                                                                                        String query1 = "select * from categorias";
+                                                                                        Statement st1 = conn.createStatement();
+                                                                                        ResultSet rs1 = st1.executeQuery(query1);
+
+                                                                                        while (rs1.next()) {
+                                                                                    %>
+											<li><a href="ServletPeliculasPorCategoria?categoria=<%= rs1.getString("id")%>"> <%= rs1.getString("nombre")%></a></li>
+                                                                                        <%
+                                                                                            } } catch (Exception e1) {
+                                                                                            }
+                                                                                        %>
 										</ul>
 									</li>
 									<li><a href="no-sidebar.html">Contactanos</a> | </li>

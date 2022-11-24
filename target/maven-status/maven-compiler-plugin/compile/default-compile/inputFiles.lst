@@ -3,7 +3,6 @@ C:\Users\juan\Documents\NetBeansProjects\progra4\src\main\java\dominio\TipoCateg
 C:\Users\juan\Documents\NetBeansProjects\progra4\src\main\java\web\ServletTipoUsuario.java
 C:\Users\juan\Documents\NetBeansProjects\progra4\src\main\java\web\ServletLogin.java
 C:\Users\juan\Documents\NetBeansProjects\progra4\src\main\java\web\ServletUsuariosTipoUsua.java
-C:\Users\juan\Documents\NetBeansProjects\progra4\src\main\java\datos\CategoriasDao.java
 C:\Users\juan\Documents\NetBeansProjects\progra4\src\main\java\dominio\Clasificacion.java
 C:\Users\juan\Documents\NetBeansProjects\progra4\src\main\java\dominio\NombrePeliculas.java
 C:\Users\juan\Documents\NetBeansProjects\progra4\src\main\java\web\UsuariosServlet.java
@@ -19,6 +18,7 @@ C:\Users\juan\Documents\NetBeansProjects\progra4\src\main\java\datos\UsuariosDao
 C:\Users\juan\Documents\NetBeansProjects\progra4\src\main\java\dominio\Usuario.java
 C:\Users\juan\Documents\NetBeansProjects\progra4\src\main\java\datos\ClienteDaoJDBC.java
 C:\Users\juan\Documents\NetBeansProjects\progra4\src\main\java\dominio\UsuarioTipoUsuario.java
+C:\Users\juan\Documents\NetBeansProjects\progra4\src\main\java\web\ServletPeliculasPorCategoria.java
 C:\Users\juan\Documents\NetBeansProjects\progra4\src\main\java\web\ServletControlador.java
 C:\Users\juan\Documents\NetBeansProjects\progra4\src\main\java\datos\TipoCategoriaDaoJDBC.java
 C:\Users\juan\Documents\NetBeansProjects\progra4\src\main\java\web\ServletCategorias.java
@@ -26,3 +26,4 @@ C:\Users\juan\Documents\NetBeansProjects\progra4\src\main\java\web\ServletClasif
 C:\Users\juan\Documents\NetBeansProjects\progra4\src\main\java\datos\UsuarioTipoUsuarioDaoJDBC.java
 C:\Users\juan\Documents\NetBeansProjects\progra4\src\main\java\dominio\Cliente.java
 C:\Users\juan\Documents\NetBeansProjects\progra4\src\main\java\datos\Conexion.java
+C:\Users\juan\Documents\NetBeansProjects\progra4\src\main\java\datos\CategoriaPeliculaDao.java
