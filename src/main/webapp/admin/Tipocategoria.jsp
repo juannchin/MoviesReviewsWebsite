@@ -1,5 +1,11 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<% //In case, if User session is not set, redirect to Login page.
+    if((request.getSession(false).getAttribute("userName")!= null) )
+    {
+    response.sendRedirect("/progra4/login.jsp");
+    %>
+<%  } %>
         <jsp:include page="/includes/admin_header.jsp" />
         
         <div class="page-wrapper">
