@@ -49,7 +49,7 @@
 
                                                                                         while (rs1.next()) {
                                                                                     %>
-											<li><a href="ServletPeliculasPorCategoria?categoria=<%= rs1.getString("id")%>"> <%= rs1.getString("nombre")%></a></li>
+											<li><a href="categoria.jsp?categoria=<%= rs1.getString("id")%>"> <%= rs1.getString("nombre")%></a></li>
                                                                                         <%
                                                                                             }
                                                                                                 Conexion.close(conn);
