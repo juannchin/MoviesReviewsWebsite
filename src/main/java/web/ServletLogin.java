@@ -52,7 +52,8 @@ public void doPost(HttpServletRequest request, HttpServletResponse response)
             session.setAttribute("Admin", true); //setting session attribute
             request.setAttribute("userName", n);
  
-            request.getRequestDispatcher("/ServletTipoUsuario").forward(request, response);
+            request.getRequestDispatcher("/ServletTipoCategoria").forward(request, response);
+          
         }
         else if(userValidate.equals("User_Role"))
         {

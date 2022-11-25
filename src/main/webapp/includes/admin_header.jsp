@@ -123,46 +123,47 @@
                 <!-- Sidebar navigation-->
                 <nav class="sidebar-nav">
                     <ul id="sidebarnav">
-                        <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="index.html"
-                                aria-expanded="false">
-                                <i class="mdi mdi-av-timer"></i>
-                                <span class="hide-menu">Dashboard</span>
-                            </a>
-                        </li>
-                        <li class="sidebar-item">
+                       
+                        <!-- <li class="sidebar-item">
                             <a class="sidebar-link waves-effect waves-dark sidebar-link" href="table-basic.html"
                                 aria-expanded="false">
                                 <i class="mdi mdi-border-none"></i>
                                 <span class="hide-menu">Peliculas</span>
                             </a>
-                        </li>
+                        </li>-->
+                        <!-- <li class="sidebar-item">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="${pageContext.request.contextPath}/ServletClasifcacion"
+                                aria-expanded="false">
+                                <i class="mdi mdi-file"></i>
+                                <span class="hide-menu">Clasificaciones</span>
+                            </a>
+                        </li>-->
                          <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="usuariostipousuarios.jsp"
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="${pageContext.request.contextPath}/ServletUsuariosTipoUsua"
                                 aria-expanded="false">
                                 <i class="mdi mdi-face"></i>
                                 <span class="hide-menu">Usuarios</span>
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="tipousuarios.jsp"
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="${pageContext.request.contextPath}/ServletTipoUsuario"
                                 aria-expanded="false">
                                 <i class="mdi mdi-account-network"></i>
                                 <span class="hide-menu">Roles</span>
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="Tipocategoria.jsp"
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="${pageContext.request.contextPath}/ServletTipoCategoria"
                                 aria-expanded="false">
                                 <i class="mdi mdi-arrange-bring-forward"></i>
                                 <span class="hide-menu">Categorias</span>
                             </a>
                         </li>
-                        <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="starter-kit.html"
+                         <li class="sidebar-item">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="casa_productora.jsp"
                                 aria-expanded="false">
                                 <i class="mdi mdi-file"></i>
-                                <span class="hide-menu">Puntuaciones</span>
+                                <span class="hide-menu">Productoras</span>
                             </a>
                         </li>
                     </ul>

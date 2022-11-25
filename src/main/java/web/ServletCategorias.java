@@ -17,7 +17,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-@WebServlet("/ServletCategoria")
+@WebServlet("/ServletTipoCategoria")
 public class ServletCategorias extends HttpServlet{
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
@@ -46,7 +46,7 @@ public class ServletCategorias extends HttpServlet{
         System.out.println("tipocategorias="+  tipocategorias);
         HttpSession sesion = request.getSession();
         sesion.setAttribute("tipocategorias",  tipocategorias);
-        response.sendRedirect("Tipocategoria.jsp");
+        response.sendRedirect("admin/Tipocategoria.jsp");
     }
    
       protected void editarTipoCategoria(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

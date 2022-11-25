@@ -26,57 +26,57 @@
             %>
 		<div id="page-wrapper">
 
-			<!-- Header -->
-				<div id="header-wrapper">
-					<header id="header" class="container">
+        <!-- Header -->
+        <div id="header-wrapper">
+                <header id="header" class="container">
 
-						<!-- Logo -->
-							<div id="logo">
-								<a href="index.jsp"><img src="images/logo.png" alt="" /></a>
-							</div>
+                        <!-- Logo -->
+                                <div id="logo">
+                                        <a href="index.jsp"><img src="images/logo.png" alt="" /></a>
+                                </div>
 
-						<!-- Nav -->
-							<nav id="nav">
-								<ul>
-									<li class="current"><a href="index.jsp">Inicio</a></li>
-									<li>
-										<a href="#">Categorias</a>
-										<ul>
-                                                                                    <%
-                                                                                        String query1 = "select * from categorias";
-                                                                                        Statement st1 = conn.createStatement();
-                                                                                        ResultSet rs1 = st1.executeQuery(query1);
+                        <!-- Nav -->
+                                <nav id="nav">
+                                        <ul>
+                                                <li class="current"><a href="index.jsp">Inicio</a></li>
+                                                <li>
+                                                        <a href="#">Categorias</a>
+                                                        <ul>
+                                                            <%
+                                                                String query1 = "select * from categorias";
+                                                                Statement st1 = conn.createStatement();
+                                                                ResultSet rs1 = st1.executeQuery(query1);
 
-                                                                                        while (rs1.next()) {
-                                                                                    %>
-											<li><a href="categoria.jsp?categoria=<%= rs1.getString("id")%>"> <%= rs1.getString("nombre")%></a></li>
-                                                                                        <%
-                                                                                            }
-                                                                                                Conexion.close(conn);
+                                                                while (rs1.next()) {
+                                                            %>
+                                                                <li><a href="categoria.jsp?categoria=<%= rs1.getString("id")%>"> <%= rs1.getString("nombre")%></a></li>
+                                                                <%
+                                                                    }
+                                                                        Conexion.close(conn);
 
-                                                                                                } catch (Exception e1) {
-                                                                                            }
-                                                                                        %>
-										</ul>
-									</li>
-									<li><a href="contacto.jsp">Contactanos</a> | </li>
-                                                                        
-                                                                        <%
-                                                                            String uid = (String)session.getAttribute("User");
-                                                                            if (uid == null)
-                                                                            {
-                                                                            %>
-									<li><a href="login.jsp">Login</a></li>
-                                                                        <li><a href="registro.jsp">Registrate</a></li>
-                                                                        <%	
-                                                                            }
-                                                                            else
-                                                                            { %>
-                                                                            <li><b>Bienvenido:</b> <%= uid %></li>
-                                                                             <li><a href="logout.jsp">Cerrar Sesión</a></li>
-                                                                            <%      }
-                                                                                    %>
-								</ul>
-							</nav>
-					</header>
-				</div>
+                                                                        } catch (Exception e1) {
+                                                                    }
+                                                                %>
+                                                        </ul>
+                                                </li>
+                                                <li><a href="contacto.jsp">Contactanos</a> | </li>
+
+                                                <%
+                                                    String uid = (String)session.getAttribute("User");
+                                                    if (uid == null)
+                                                    {
+                                                    %>
+                                                <li><a href="login.jsp">Login</a></li>
+                                                <li><a href="registro.jsp">Registrate</a></li>
+                                                <%	
+                                                    }
+                                                    else
+                                                    { %>
+                                                    <li><b>Bienvenido:</b> <%= uid %></li>
+                                                     <li><a href="logout.jsp">Cerrar Sesión</a></li>
+                                                    <%      }
+                                                            %>
+                                        </ul>
+                                </nav>
+                </header>
+        </div>

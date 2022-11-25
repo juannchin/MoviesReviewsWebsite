@@ -1,9 +1,3 @@
-<%-- 
-    Document   : pelicula
-    Created on : Nov 23, 2022, 11:38:27 PM
-    Author     : juan
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@page language="java" import="java.util.*" %>
 <%@page language="java" import="java.sql.*" %>
@@ -40,14 +34,14 @@
              </div>
                         <div style="margin-left: 25px;">
                             <header>
-                                <h2> <%= rs1.getString("nombre")%></h2>
+                                <h2> <input type="hidden" name="submit_id" value="${section.id}" /></h2>
                                 <p>Puntaje: <%= rs1.getString("calificacion")%> de 10</p>
                                  <%
                                     String uid = (String)session.getAttribute("User");
                                     if (uid != null)
                                     {
                                     %>
-                                    <form name="vatacion" onsubmit="servletVotacion">
+                                    <form name="votacion" action="votacion.jsp" method="GET">
                                     <p>Tu puntuación: 
                                     <select name="votacion" style="width: 100px;">
                                         <option value="1" selected>1</option>
@@ -61,7 +55,10 @@
                                         <option value="9">9</option>
                                         <option value="10">10</option>
                                     </select>
-                                        <input class="clear" type="submit" name="votar" value="Votar" style="all:unset;border: 1px;background: #ff0000; color:#fcfdfd; font-weight: bold; width: 125px; text-align: center">
+                                        <input type="hidden" name="pelicula_id" value="<%= id %>" />
+                                        <input type="hidden" name="user_id" value="<%= uid %>" />
+                                        <input type="submit" style="all:unset;border: 1px;background: #ff0000; color:#fcfdfd; font-weight: bold; width: 125px; text-align: center">
+                                    </form>
                                 <%	
                                     } else {
                                 %>

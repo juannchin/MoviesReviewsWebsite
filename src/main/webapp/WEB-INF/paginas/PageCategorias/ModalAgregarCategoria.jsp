@@ -6,7 +6,7 @@
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">X</button>
             </div>
 
-            <form action="${pageContext.request.contextPath}/ServletCategoria?accion=insertar"
+            <form action="${pageContext.request.contextPath}/ServletTipoCategoria?accion=insertar"
                   method="POST" class="was-validated">
                 <div class="modal-body">
                     <div class="form-group">
