@@ -87,12 +87,12 @@ public class ClasificacionDao {
             rs = stmt.executeQuery();//posicionarse en el primer registro
             rs.next(); 
             //nombre de los campos en la base de datos, recuperando los elementos
-            int id_clasificacion = rs.getInt("id_clasificacion");
+            //int id_clasificacion = rs.getInt("id_clasificacion");
             String nombre = rs.getString("nombre");
             String edad_minima = rs.getString("edad_minima");
             String recomendacion = rs.getString("recomendacion");
             
-            clasificacion.setId_clasificacion(id_clasificacion);
+            //clasificacion.setId_clasificacion(id_clasificacion);
             clasificacion.setNombre(nombre);
             clasificacion.setEdad_minima(edad_minima);
             clasificacion.setRecomendacion(recomendacion);

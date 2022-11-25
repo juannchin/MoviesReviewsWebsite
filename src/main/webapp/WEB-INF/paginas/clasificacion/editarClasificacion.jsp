@@ -1,18 +1,17 @@
-<!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Listado de Roles</title>
+        <title>Editar Clasificacion</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
         <script src="https://kit.fontawesome.com/64c8d7120b.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <jsp:include page="/WEB-INF/paginas/comunes/cabecera_clasificacion.jsp" />
+        <jsp:include page="/WEB-INF/paginas/clasificacion/cabecera_clasificacion.jsp" />
 
         <form action="${pageContext.request.contextPath}/ServletClasificacion?accion=modificar&id_clasificacion=${clasificacion.id_clasificacion}"
               method="POST" class="was-validated">
             <!-- Botones -->
-            <jsp:include page="/WEB-INF/paginas/comunes/botones_NE_clasificacion.jsp" />
+            <jsp:include page="/WEB-INF/paginas/clasificacion/botones_NE_clasificacion.jsp" />
             <section id="details">
                 <div class="container">
                     <div class="row">

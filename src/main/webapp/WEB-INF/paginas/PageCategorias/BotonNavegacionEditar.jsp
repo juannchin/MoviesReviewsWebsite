@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-3">
-                <a href="indexCategoria.jsp" class="btn btn-light btn-block">
+                <a href="${pageContext.request.contextPath}/ServletTipoCategoria" class="btn btn-light btn-block">
                     <i class="fas fa-arrow-left"></i> Retorno al inicio
                 </a>
             </div>

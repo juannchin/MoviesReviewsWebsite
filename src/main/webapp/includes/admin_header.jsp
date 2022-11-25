@@ -131,13 +131,13 @@
                                 <span class="hide-menu">Peliculas</span>
                             </a>
                         </li>-->
-                        <!-- <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="${pageContext.request.contextPath}/ServletClasifcacion"
+                        <li class="sidebar-item">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="${pageContext.request.contextPath}/ServletClasificacion"
                                 aria-expanded="false">
                                 <i class="mdi mdi-file"></i>
                                 <span class="hide-menu">Clasificaciones</span>
                             </a>
-                        </li>-->
+                        </li>
                          <li class="sidebar-item">
                             <a class="sidebar-link waves-effect waves-dark sidebar-link" href="${pageContext.request.contextPath}/ServletUsuariosTipoUsua"
                                 aria-expanded="false">
@@ -160,7 +160,7 @@
                             </a>
                         </li>
                          <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="casa_productora.jsp"
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="${pageContext.request.contextPath}/Servletcasaproductora"
                                 aria-expanded="false">
                                 <i class="mdi mdi-file"></i>
                                 <span class="hide-menu">Productoras</span>

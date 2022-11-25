@@ -1,6 +1,5 @@
 package datos;
 
-import datos.UsuariosDao;
 import dominio.Usuario;
 import dominio.TipoUsuario;
 
@@ -39,7 +38,7 @@ public class UsuariosDao
             stmt.setString(3, usuario.getEmail());
             stmt.setString(4, usuario.getClave());
             stmt.setString(5, usuario.getFecha_nac());
-            stmt.setInt(6, 1);
+            stmt.setInt(6, 2);
             stmt.setString(7, usuario.getPregunta_r());
             stmt.setString(8, usuario.getRespuesta_r());
             

@@ -6,9 +6,7 @@
         <script src="https://kit.fontawesome.com/64c8d7120b.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <jsp:include page="/WEB-INF/paginas/comunes/cabeceraProductora.jsp" />
-        
-       
+
             <form action="${pageContext.request.contextPath}/Servletcasaproductora?accion=modificar&idProductora=${casa.id_productora}"
               method="POST" class="was-validated">
             <!-- Botones -->

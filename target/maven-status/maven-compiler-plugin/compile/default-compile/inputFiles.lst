@@ -1,29 +1,29 @@
-C:\Users\juan\Documents\NetBeansProjects\progra4\src\main\java\datos\LoginDao.java
-C:\Users\juan\Documents\NetBeansProjects\progra4\src\main\java\dominio\TipoCategoria.java
-C:\Users\juan\Documents\NetBeansProjects\progra4\src\main\java\web\ServletTipoUsuario.java
-C:\Users\juan\Documents\NetBeansProjects\progra4\src\main\java\web\ServletLogin.java
-C:\Users\juan\Documents\NetBeansProjects\progra4\src\main\java\web\ServletUsuariosTipoUsua.java
-C:\Users\juan\Documents\NetBeansProjects\progra4\src\main\java\dominio\Casa_productora.java
-C:\Users\juan\Documents\NetBeansProjects\progra4\src\main\java\dominio\Clasificacion.java
-C:\Users\juan\Documents\NetBeansProjects\progra4\src\main\java\datos\CasaProductoraDAO.java
-C:\Users\juan\Documents\NetBeansProjects\progra4\src\main\java\dominio\NombrePeliculas.java
-C:\Users\juan\Documents\NetBeansProjects\progra4\src\main\java\web\UsuariosServlet.java
-C:\Users\juan\Documents\NetBeansProjects\progra4\src\main\java\datos\ClasificacionDao.java
-C:\Users\juan\Documents\NetBeansProjects\progra4\src\main\java\web\Servletcasaproductora.java
-C:\Users\juan\Documents\NetBeansProjects\progra4\src\main\java\web\UserLogoutServlet.java
-C:\Users\juan\Documents\NetBeansProjects\progra4\src\main\java\dominio\Login.java
-C:\Users\juan\Documents\NetBeansProjects\progra4\src\main\java\dominio\TipoUsuario.java
-C:\Users\juan\Documents\NetBeansProjects\progra4\src\main\java\datos\LoginBean.java
-C:\Users\juan\Documents\NetBeansProjects\progra4\src\main\java\datos\PeliculasDao.java
-C:\Users\juan\Documents\NetBeansProjects\progra4\src\main\java\web\ServletPeliculas.java
-C:\Users\juan\Documents\NetBeansProjects\progra4\src\main\java\datos\TipoUsuarioDaoJDBC.java
-C:\Users\juan\Documents\NetBeansProjects\progra4\src\main\java\datos\UsuariosDao.java
-C:\Users\juan\Documents\NetBeansProjects\progra4\src\main\java\dominio\Usuario.java
-C:\Users\juan\Documents\NetBeansProjects\progra4\src\main\java\dominio\UsuarioTipoUsuario.java
-C:\Users\juan\Documents\NetBeansProjects\progra4\src\main\java\web\ServletPeliculasPorCategoria.java
-C:\Users\juan\Documents\NetBeansProjects\progra4\src\main\java\datos\TipoCategoriaDaoJDBC.java
-C:\Users\juan\Documents\NetBeansProjects\progra4\src\main\java\web\ServletCategorias.java
-C:\Users\juan\Documents\NetBeansProjects\progra4\src\main\java\web\ServletClasificacion.java
-C:\Users\juan\Documents\NetBeansProjects\progra4\src\main\java\datos\UsuarioTipoUsuarioDaoJDBC.java
-C:\Users\juan\Documents\NetBeansProjects\progra4\src\main\java\datos\Conexion.java
-C:\Users\juan\Documents\NetBeansProjects\progra4\src\main\java\datos\CategoriaPeliculaDao.java
+C:\Users\Admin\Desktop\Prueba git\progra4\src\main\java\dominio\Login.java
+C:\Users\Admin\Desktop\Prueba git\progra4\src\main\java\datos\Conexion.java
+C:\Users\Admin\Desktop\Prueba git\progra4\src\main\java\web\ServletClasificacion.java
+C:\Users\Admin\Desktop\Prueba git\progra4\src\main\java\datos\UsuariosDao.java
+C:\Users\Admin\Desktop\Prueba git\progra4\src\main\java\dominio\TipoUsuario.java
+C:\Users\Admin\Desktop\Prueba git\progra4\src\main\java\datos\CasaProductoraDAO.java
+C:\Users\Admin\Desktop\Prueba git\progra4\src\main\java\datos\UsuarioTipoUsuarioDaoJDBC.java
+C:\Users\Admin\Desktop\Prueba git\progra4\src\main\java\web\ServletPeliculas.java
+C:\Users\Admin\Desktop\Prueba git\progra4\src\main\java\web\UsuariosServlet.java
+C:\Users\Admin\Desktop\Prueba git\progra4\src\main\java\web\ServletTipoUsuario.java
+C:\Users\Admin\Desktop\Prueba git\progra4\src\main\java\dominio\Casa_productora.java
+C:\Users\Admin\Desktop\Prueba git\progra4\src\main\java\web\Servletcasaproductora.java
+C:\Users\Admin\Desktop\Prueba git\progra4\src\main\java\dominio\NombrePeliculas.java
+C:\Users\Admin\Desktop\Prueba git\progra4\src\main\java\web\ServletCategorias.java
+C:\Users\Admin\Desktop\Prueba git\progra4\src\main\java\dominio\TipoCategoria.java
+C:\Users\Admin\Desktop\Prueba git\progra4\src\main\java\datos\LoginDao.java
+C:\Users\Admin\Desktop\Prueba git\progra4\src\main\java\datos\ClasificacionDao.java
+C:\Users\Admin\Desktop\Prueba git\progra4\src\main\java\datos\LoginBean.java
+C:\Users\Admin\Desktop\Prueba git\progra4\src\main\java\datos\TipoUsuarioDaoJDBC.java
+C:\Users\Admin\Desktop\Prueba git\progra4\src\main\java\web\ServletPeliculasPorCategoria.java
+C:\Users\Admin\Desktop\Prueba git\progra4\src\main\java\dominio\Usuario.java
+C:\Users\Admin\Desktop\Prueba git\progra4\src\main\java\dominio\Clasificacion.java
+C:\Users\Admin\Desktop\Prueba git\progra4\src\main\java\dominio\UsuarioTipoUsuario.java
+C:\Users\Admin\Desktop\Prueba git\progra4\src\main\java\web\ServletLogin.java
+C:\Users\Admin\Desktop\Prueba git\progra4\src\main\java\web\ServletUsuariosTipoUsua.java
+C:\Users\Admin\Desktop\Prueba git\progra4\src\main\java\web\UserLogoutServlet.java
+C:\Users\Admin\Desktop\Prueba git\progra4\src\main\java\datos\PeliculasDao.java
+C:\Users\Admin\Desktop\Prueba git\progra4\src\main\java\datos\CategoriaPeliculaDao.java
+C:\Users\Admin\Desktop\Prueba git\progra4\src\main\java\datos\TipoCategoriaDaoJDBC.java

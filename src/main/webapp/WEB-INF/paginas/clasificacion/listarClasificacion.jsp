@@ -2,9 +2,9 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <fmt:setLocale value="en_US"/>
 <section>
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
-            <div class="col-md-7">
+            <div class="col-12">
                 <div class="card-header">
                     
                     <table class="table table-bordered">
@@ -24,17 +24,17 @@
                                     <td class="text-center">${clasificacion.nombre} </td>
                                     <td class="text-center">${clasificacion.edad_minima} </td>
                                     <td class="text-center">${clasificacion.recomendacion} </td>
-                                    <td class="text-center">
+                                    <td class="d-flex m-3">
                                         <a href="${pageContext.request.contextPath}/ServletClasificacion?accion=editar&id_clasificacion=${clasificacion.id_clasificacion}"
                                            class="btn btn-secondary">
                                            
                                             <i class="fas fa-angle-double-right"></i>Editar
                                         </a>
                                        
-                <a href="${pageContext.request.contextPath}/ServletClasificacion?accion=eliminar&id_clasificacion=${clasificacion.id_clasificacion}" 
-                    class="btn btn-danger btn-block">
-                   <i class="fas fa-trash"></i> Eliminar
-                </a>
+                                        <a href="${pageContext.request.contextPath}/ServletClasificacion?accion=eliminar&id_clasificacion=${clasificacion.id_clasificacion}" 
+                                            class="btn btn-danger btn-block">
+                                           <i class="fas fa-trash"></i> Eliminar
+                                        </a>
           
                                     </td>
                                 </tr>

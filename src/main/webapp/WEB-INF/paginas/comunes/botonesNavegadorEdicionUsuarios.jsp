@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-3">
-                <a href="index.jsp" class="btn btn-ligth btn-block">
+                <a href="${pageContext.request.contextPath}/ServletUsuariosTipoUsua" class="btn btn-ligth btn-block">
                     <i class="fas fas-arrow-left"></i> Retorno al inicio
                 </a>
             </div>

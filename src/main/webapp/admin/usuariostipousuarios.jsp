@@ -6,7 +6,7 @@
     response.sendRedirect("/progra4/login.jsp");
     %>
 <%  } %>
- <jsp:include page="/includes/admin_header.jsp" />
+        <jsp:include page="/includes/admin_header.jsp" />
  
          <div class="page-wrapper">
             <div class="container-fluid">
